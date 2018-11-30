@@ -665,7 +665,7 @@ Select the _Scheduling_ section, and run more tasks by setting the _Scale_ level
 
 ![](img/swarm/pets-scale.jpg)
 
-Click save and UCP returns to the service list. The service is scaling up and you can see the container list by clicking on _Inspect Resource...Containers_:
+Click save and UCP returns to the service list. The service is scaling up and you can see the container list by clicking on the **pets** service and scrolling down to the bottom of the page:
 
 [](img/swarm/pets-container-list.jpg)
 
