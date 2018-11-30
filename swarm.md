@@ -408,11 +408,7 @@ Run the `docker network ls` command on **worker1** to show all the overlay netwo
 ```
 $ docker network ls --filter driver=overlay
 NETWORK ID          NAME                DRIVER              SCOPE
-55f10b3fb8ed        bridge              bridge              local
-b7b30433a639        docker_gwbridge     bridge              local
-a7449465c379        host                host                local
 8hq1n8nak54x        ingress             overlay             swarm
-06c349b9cc77        none                null                local
 ```
 
 > The **overnet** network is not in the list. This is because Docker only extends overlay networks to hosts when they are needed. This is usually when a host runs a task from a service that is created on the network. We will see this shortly.
