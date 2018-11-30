@@ -60,7 +60,7 @@ cd ..
 Next clone the `docker-networking-workshop` repo and navigate to the `kubernetes` directory on the **manager1** node:
 
 ```
-git clone https://github.com/sixeyed/docker-networking-workshop.git
+git clone https://github.com/GuillaumeMorini/docker-networking-workshop.git
 cd ./docker-networking-workshop/kubernetes
 ```
 
