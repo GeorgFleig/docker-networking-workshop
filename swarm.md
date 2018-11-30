@@ -667,7 +667,7 @@ Select the _Scheduling_ section, and run more tasks by setting the _Scale_ level
 
 Click save and UCP returns to the service list. The service is scaling up and you can see the container list by clicking on the **pets** service and scrolling down to the bottom of the page:
 
-[](img/swarm/pets-container-list.jpg)
+![](img/swarm/pets-container-list.jpg)
 
 You'll see containers running on nodes across the cluster. Now refresh the tab with the Pets website. Each time you refresh you'll see a different container ID. Docker swarm load-balances requests across all the tasks in the service.
 
