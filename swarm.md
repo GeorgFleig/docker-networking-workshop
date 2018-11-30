@@ -535,7 +535,7 @@ Execute the following commands from **worker3**, to verify that containers on th
 Store the ID of the service task container to a varable:
 
 ```
-id=$(docker container ls --last 1 --format "{{ .ID }}")
+id=$(docker container ls --last 1 --filter name=ubuntu --format "{{ .ID }}")
 ```
 
 And now confirm you can ping the container running on **worker3** from the container running on **worker2**:
@@ -628,7 +628,7 @@ Towards the bottom of the output you will see the VIP of the service listed. The
 Now that you're connected to **manager1** you can repeate the same `ping` command using the container running on the manager - you will get a response form the same VIP:
 
 ```
-$ id=$(docker container ls --last 1 --format "{{ .ID }}")
+id=$(docker container ls --last 1 --filter name=ubuntu --format "{{ .ID }}")
 
 $ docker container exec $id ping -c 2 ubuntu
 PING ubuntu (10.0.0.2) 56(84) bytes of data.
