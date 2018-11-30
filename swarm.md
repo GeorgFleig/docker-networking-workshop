@@ -553,7 +553,7 @@ The output above shows that all the tasks from the **ubuntu** service are on the
 
 Now that you have a working service using an overlay network, let's test service discovery.
 
-Still on **worker2**, use the container ID you have stored to see how DNS resolution is configured in containers. Run `cat /etc/resolv.conf`:
+Still on **worker3**, use the container ID you have stored to see how DNS resolution is configured in containers. Run `cat /etc/resolv.conf`:
 
 ```
 $ docker container exec $id cat /etc/resolv.conf
