@@ -647,23 +647,23 @@ Create the service with a single replica, using the **manager1** node:
 docker service create -p 5000:5000 -d --name pets --replicas=1 nicolaka/pets_web:1.0
 ```
 
-Browse to UCP and using the left navigation click on _Swarm...Services_. You'll see the **pets** service in the list - click on the service and in the details panel on the right you can see a link to the published endpoint:
+Browse to UCP and using the left navigation click on _Swarm...Services_. You'll see the **pets** service in the list - click on the service and look for endpoints section, copy the URL:
 
-[](img/swarm/pets-service-link.jpg)
+![](img/swarm/pets-service-link.jpg)
 
-Click the link and the app will open in a new browser tab:
+ Paste it in a new tab in your browser:
 
-[](img/swarm/pets-1.jpg)
+![](img/swarm/pets-1.jpg)
 
 > The domain name you're browsing to is the UCP manager node. The ingress network receives the request and routes it to one of the service tasks - any node in the cluster can respond to the request by internally routing it to a container.
 
 Try scaling up the service. In UCP select the **pets** service and click _Configure_:
 
-[](img/swarm/pets-configure.jpg)
+![](img/swarm/pets-configure.jpg)
 
 Select the _Scheduling_ section, and run more tasks by setting the _Scale_ level to 10:
 
-[](img/swarm/pets-scale.jpg)
+![](img/swarm/pets-scale.jpg)
 
 Click save and UCP returns to the service list. The service is scaling up and you can see the container list by clicking on _Inspect Resource...Containers_:
 
