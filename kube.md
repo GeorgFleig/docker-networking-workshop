@@ -40,7 +40,7 @@ We will setup 'kubectl' on the **manager1** instance. To do so, run the
 following commands in the shell on **manager1**
 
 ```
-password='typeInPasswordHere'
+password='admin1234'
 
 controller="$(curl -sS https://${PWD_HOST_FQDN}/sessions/${SESSION_ID} | jq -r '.instances[] | select(.hostname == "manager1") | .proxy_host').direct.${PWD_HOST_FQDN}"
 
