@@ -87,7 +87,9 @@ kubectl apply -f ./manifests/
 ![ucb kubernetes namespace selection](img/kube/namespace-selection.jpg)
 ![kubernetes namespace context confirmation](img/kube/context-switch.jpg)
 
-* Finally, find and click on the `management-ui` **Load Balancers**, then on the one named **management-ui**, scroll to find the node port (should be 33002) and open a new web browser tab/window with UCP url and add the node port behind (like `ip172-18-0-6-bc2m2d8qitt0008vqor0.direct.ee-beta2.play-with-docker.com:33002`). This should show the real-time application data flows.
+* Finally, find and click on the `management-ui` **Load Balancers**, then on the one named **management-ui**, scroll to find the node port (should be 33002) and open a new web browser tab/window with UCP url and add the node port behind (like `http://ip172-18-0-6-bc2m2d8qitt0008vqor0.direct.ee-beta2.play-with-docker.com:33002`). This should show the real-time application data flows.
+
+Be sure to check that you forced your browser to use http and not https, as the app is based on HTTP.
 
 > If it all worked, you should now see something that looks like the
 > image below
